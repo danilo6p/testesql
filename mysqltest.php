@@ -9,4 +9,4 @@ if (!$conn) {echo "Não foi possível conectar ao banco MySQL.
 else {echo "Parabéns!! A conexão ao banco de dados ocorreu normalmente!.
 ";}
 mysql_close();
-?> 
+?>  

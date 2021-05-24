@@ -1,7 +1,14 @@
-<?
- echo "Não foi possível conectar ao banco MySQL.
-"; 
-echo "Parabéns!! A conexão ao banco de dados ocorreu normalmente!.
-";
+<?php
+$servername = "db4free.net";
+$username = "tulalip50";
+$password = "tulalip50";
 
-?>  
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+?>
